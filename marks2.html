@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marks</title>
+</head>
+<body>
+    <div id="marks">
+
+    </div>
+    <div id="percentage"></div>
+    <script>
+    var phy= parseInt (prompt("enter physics marks"));
+    var math=parseInt (prompt("enter math marks"));
+    var eng=parseInt (prompt("enter English marks"));
+    var che=parseInt (prompt("enter chemistry marks"));
+    var bio=parseInt (prompt("enter biology marks"));
+    var a= (phy+math+eng+che+bio);
+    document.getElementById("marks").innerHTML=a;
+    var b= a/700*100;
+    document.getElementById("percentage").innerHTML=b
+    document.getElementById("marks").innerHTML="physics marks" + phy + "<br> maths marks" + math + "<br> Chemistry marks" + che +"<br> Biology marks" + bio +"<br> English marks" + eng
+
+    </script>
+</body>
+</html>
